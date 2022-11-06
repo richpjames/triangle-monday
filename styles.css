@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Minion;
+  src: url(./fonts//MinionPro-Regular.otf);
+}
+
+@font-face {
+  font-family: Agenda;
+  src: url(./fonts/Agenda-BoldItalic.otf);
+}
+
+* {
+  font-family: "Minion", Arial, Helvetica, sans-serif;
+}
