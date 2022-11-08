@@ -20,15 +20,51 @@
 
   <body>
     <h1 class="sr-only">Triangle Monday</h1>
+    <!-- <script>
+        const scrollDistance = 30;
+        const timeout = 700;
 
-    <!-- <div class="top-banner">
+        const bounce = () => {
+          const timerId1 = setTimeout(() => {
+            window.scrollBy({
+              top: scrollDistance,
+              behavior: "smooth",
+            });
+          }, timeout);
+          const timerId2 = setTimeout(() => {
+            window.scrollBy({
+              top: -scrollDistance,
+              behavior: "smooth",
+            });
+          }, timeout * 1.5);
+          return [timerId1, timerId2];
+        };
+
+        window.onload = function () {
+          const [timerId1, timerId2] = bounce();
+          const timerId3 = setTimeout(() => {
+            const [timerId4, timerId5] = bounce();
+          }, 2.5 * 1000);
+
+          window.addEventListener("scroll", () => {
+            let run = false;
+            if (!run) {
+              for (let i = timerId1; i < 10; i++) {
+                clearTimeout(i);
+              }
+              run = true;
+            }
+          });
+        };
+      </script> -->
+    <div class="top-banner">
       <img alt="Triangle Monday logo" src="./assets/bw_logo.png" class="logo" />
-    </div> -->
+    </div>
+
     <iframe
-      src="https://player.vimeo.com/video/767377341?h=5f2dbdc1f8&autoplay=1&title=0&byline=0&portrait=0&muted=1"
-      class="video"
+      src="https://player.vimeo.com/video/767377341?h=5f2dbdc1f8&autoplay=1&title=0&byline=0&portrait=0"
+      id="video"
       frameborder="0"
-      height="100%"
       width="100%"
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen
@@ -39,7 +75,27 @@
         <img alt="Triangle Monday logo" src="./assets/cropped_v2.svg" />
       </div>
 
+      <h2 class="executive-producer">Executive Producer</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo odio
+        vitae interdum blandit. Praesent ornare velit ac aliquet rutrum.
+        Phasellus posuere tincidunt magna quis interdum.
+      </p>
+      <p>
+        Aenean vehicula, ante sit amet accumsan accumsan, dui mi bibendum
+        libero, vitae rutrum mi ex at neque. Mauris viverra orci ut orci
+        molestie, a efficitur ex viverra. Nunc sed dolor mi. Phasellus sodales
+        justo eget odio mattis tincidunt.
+      </p>
+
       <a class="contact" href="mailto:andrea@trianglemonday.com">Contact</a>
+      <a class="smaller-text" href="mailto:andrea@trianglemonday.com"
+        >andrea@trianglemonday.com</a
+      >
+      <a href="tel:+447789871871" class="smaller-text">+44 (0)7789 871 871</a>
     </div>
   </body>
 </html>
+
+<footer></footer>
