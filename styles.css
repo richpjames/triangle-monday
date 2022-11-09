@@ -39,6 +39,30 @@ iframe {
 p {
   max-width: 50rem;
   font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 34rem;
+  list-style: none;
+  align-self: center;
+  font-size: 1.25rem;
+  padding-left: 0;
+  width: 100%;
+  margin-top: 0;
+  hyphens: auto;
+}
+
+li {
+  width: 16rem;
+}
+
+.previous-clients {
+  margin-bottom: 0;
+  align-self: flex-start;
 }
 
 .executive-producer {
@@ -56,7 +80,7 @@ p {
   color: white;
   display: flex;
   justify-content: center;
-  height: 7.5vh;
+  height: 4.5rem;
 }
 
 .logo {
@@ -68,13 +92,22 @@ p {
   font-size: 1.5rem;
 }
 
-.bottom-of-page {
-  height: 100vh;
+.phone-number {
+  margin-bottom: 5rem;
+}
 
+.bottom-of-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.second-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -87,9 +120,15 @@ p {
   width: 1px;
 }
 
-/* .image-wrapper {
-  transition: transform 2000ms ease-in-out;
+.image-wrapper {
+  /* transition: transform 2000ms ease-in-out; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-.image-wrapper-grow {
-  transform: scale(2); */
+
+.bottom-line {
+  margin-bottom: 0;
+}
+/* .image-wrapper-grow { */
+/* transform: scale(2); */
 /* } */

@@ -14,57 +14,61 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>Triangle Monday</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <h1 class="sr-only">Triangle Monday</h1>
-    <!-- <script>
-        const scrollDistance = 30;
-        const timeout = 700;
+    <script>
+      const scrollDistance = 30;
+      const timeout = 1000;
 
-        const bounce = () => {
-          const timerId1 = setTimeout(() => {
-            window.scrollBy({
-              top: scrollDistance,
-              behavior: "smooth",
-            });
-          }, timeout);
-          const timerId2 = setTimeout(() => {
-            window.scrollBy({
-              top: -scrollDistance,
-              behavior: "smooth",
-            });
-          }, timeout * 1.5);
-          return [timerId1, timerId2];
-        };
-
-        window.onload = function () {
-          const [timerId1, timerId2] = bounce();
-          const timerId3 = setTimeout(() => {
-            const [timerId4, timerId5] = bounce();
-          }, 2.5 * 1000);
-
-          window.addEventListener("scroll", () => {
-            let run = false;
-            if (!run) {
-              for (let i = timerId1; i < 10; i++) {
-                clearTimeout(i);
-              }
-              run = true;
-            }
+      const bounce = () => {
+        const timerId1 = setTimeout(() => {
+          window.scrollBy({
+            top: scrollDistance,
+            behavior: "smooth",
           });
-        };
-      </script> -->
+        }, timeout - 150);
+
+        setTimeout(() => {
+          window.scrollBy({
+            top: -scrollDistance,
+            behavior: "smooth",
+          });
+        }, timeout);
+
+        return timerId1;
+      };
+
+      let timerId1;
+      window.onload = function () {
+        if (!window.scrollY) {
+          timerId1 = bounce();
+          // setTimeout(() => {
+          //   bounce();
+          // }, 2.5 * 1000);
+
+          // if (!run) {
+          //   for (let i = timerId1; i < 10; i++) {
+          //     clearTimeout(i);
+          //   }
+          //   run = true;
+          // }
+        }
+      };
+      window.addEventListener("scroll", () => {
+        clearTimeout(timerId1);
+      });
+    </script>
     <div class="top-banner">
       <img alt="Triangle Monday logo" src="./assets/bw_logo.png" class="logo" />
     </div>
 
     <iframe
-      src="https://player.vimeo.com/video/767377341?h=5f2dbdc1f8&autoplay=1&title=0&byline=0&portrait=0"
+      src="https://player.vimeo.com/video/767377341?h=5f2dbdc1f8&autoplay=1&title=0&byline=0&portrait=0&muted=1"
       id="video"
-      frameborder="0"
       width="100%"
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen
@@ -75,27 +79,92 @@
         <img alt="Triangle Monday logo" src="./assets/cropped_v2.svg" />
       </div>
 
-      <h2 class="executive-producer">Executive Producer</h2>
+      <p>
+        I'm a multi-award winning Executive Producer and Change Agent, producing
+        impact-driven and global branded content in London and Amsterdam for
+        over 18 years.
+      </p>
+      <p>
+        From social and viral (#NatureNow surpassing 80 million views), to short
+        films (working with celebrities, influencers, NGO’s, right through to
+        100 year old park ranger Betty Reid Hoskins), short series surrounding
+        the climate crisis, keystone species, and the illegal pet trade, and a
+        feature documentary with the Pope.
+      </p>
+      <p>
+        I excel at bringing together and managing the best teams for each
+        project, working closely with client partners; marrying creative, story
+        and impact with budgets and low-carbon productions.
+      </p>
+      <p class="bottom-line">
+        Because films and productions do not need to cost the Earth.
+      </p>
+      <p>Powered by sunshine, plants and nature.</p>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo odio
-        vitae interdum blandit. Praesent ornare velit ac aliquet rutrum.
-        Phasellus posuere tincidunt magna quis interdum.
-      </p>
-      <p>
-        Aenean vehicula, ante sit amet accumsan accumsan, dui mi bibendum
-        libero, vitae rutrum mi ex at neque. Mauris viverra orci ut orci
-        molestie, a efficitur ex viverra. Nunc sed dolor mi. Phasellus sodales
-        justo eget odio mattis tincidunt.
-      </p>
+      <h3 class="previous-clients">Previous clients include:</h3>
+      <ul>
+        <li>adam&eveDDB,</li>
+        <li>Analog Folk,</li>
+        <li>Apple,</li>
+        <li>Bentley,</li>
+        <li>Canon,</li>
+        <li>Cheetah Conservation Fund,</li>
+        <li>Conservation International,</li>
+        <li>Conservation Carpathia,</li>
+        <li>Dior,</li>
+        <li>Dyson,</li>
+        <li>Ellen MacArthur Foundation,</li>
+        <li>Environmental Investigation Agency (EIA),</li>
+        <li>Fairphone,</li>
+        <li>Four Paws,</li>
+        <li>The Guardian,</li>
+        <li>Harpers Bazaar Netherlands,</li>
+        <li>Havas London,</li>
+        <li>HESC,</li>
+        <li>IFAW,</li>
+        <li>IKEA,</li>
+        <li>International Animal Rescue,</li>
+        <li>Jack Wolfskin,</li>
+        <li>the Jane Goodall Institute,</li>
+        <li>John Lewis,</li>
+        <li>K9,</li>
+        <li>lastminute.com,</li>
+        <li>L’Oreal,</li>
+        <li>made.com,</li>
+        <li>Max Factor,</li>
+        <li>MAL,</li>
+        <li>New York Times Magazine,</li>
+        <li>National Whistleblower Center,</li>
+        <li>Natura &Co.,</li>
+        <li>Nike,</li>
+        <li>Nikon,</li>
+        <li>Ocean Alliance,</li>
+        <li>Oman Air,</li>
+        <li>Overfinch,</li>
+        <li>Parley,</li>
+        <li>Rewriting Extinction,</li>
+        <li>Sunday Times Style,</li>
+        <li>Sunshine Agency,</li>
+        <li>Surfers Against Sewage,</li>
+        <li>The Telegraph,</li>
+        <li>The Times,</li>
+        <li>TRAFFIC,</li>
+        <li>TRESemme,</li>
+        <li>Unilever,</li>
+        <li>Versatile Studios,</li>
+        <li>Vodafone,</li>
+        <li>Vogue,</li>
+        <li>vWieden + Kennedy,</li>
+        <li>Wildlife Justice Commission.,</li>
+      </ul>
 
       <a class="contact" href="mailto:andrea@trianglemonday.com">Contact</a>
       <a class="smaller-text" href="mailto:andrea@trianglemonday.com"
         >andrea@trianglemonday.com</a
       >
-      <a href="tel:+447789871871" class="smaller-text">+44 (0)7789 871 871</a>
+      <a href="tel:+447789871871" class="smaller-text phone-number"
+        >+44 (0)7789 871 871</a
+      >
     </div>
   </body>
 </html>
-
-<footer></footer>
