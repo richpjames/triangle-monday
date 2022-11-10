@@ -8,8 +8,13 @@
   src: url(./fonts/Agenda-BoldItalic.otf);
 }
 
+@font-face {
+  font-family: Trebuchet;
+  src: url(./fonts/trebuc.woff);
+}
+
 * {
-  font-family: "Minion", Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet", Arial, sans-serif;
 }
 
 body {
@@ -23,6 +28,7 @@ a {
   text-decoration: none;
   color: #000;
   font-size: 2rem;
+  line-height: normal;
 }
 
 img {
@@ -46,13 +52,14 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 34rem;
+  height: 36rem;
   list-style: none;
   align-self: center;
   font-size: 1.25rem;
   padding-left: 0;
   width: 100%;
   margin-top: 0;
+  margin-bottom: 1rem;
   hyphens: auto;
 }
 
@@ -68,10 +75,6 @@ li {
 .executive-producer {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.contact {
-  margin-top: 2rem;
 }
 
 .top-banner {
