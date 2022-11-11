@@ -4,11 +4,6 @@
 }
 
 @font-face {
-  font-family: Agenda;
-  src: url(./fonts/Agenda-BoldItalic.otf);
-}
-
-@font-face {
   font-family: Trebuchet;
   src: url(./fonts/trebuc.woff);
 }
@@ -64,7 +59,7 @@ ul {
 }
 
 li {
-  width: 16rem;
+  /* width: 16rem; */
 }
 
 .previous-clients {
@@ -106,11 +101,10 @@ li {
   justify-content: center;
 }
 
-.second-page-wrapper {
+.client-list {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
+  width: 60rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -124,14 +118,14 @@ li {
 }
 
 .image-wrapper {
-  /* transition: transform 2000ms ease-in-out; */
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-.bottom-line {
+.penultimate-line {
   margin-bottom: 0;
 }
-/* .image-wrapper-grow { */
-/* transform: scale(2); */
-/* } */
+
+.bottom-line {
+  margin-bottom: 3rem;
+}
