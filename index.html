@@ -82,7 +82,15 @@
             id="polygon-clip-triangle-isoceles"
             clipPathUnits="objectBoundingBox"
           >
-            <polygon points="0.5 0, 0.5 0, 1 0.87, 0 0.87" />
+            <polygon points="0.40 0.25, 0.60 0.25, 0.5 1">
+              <animate
+                attributeName="points"
+                dur="1s"
+                fill="remove"
+                from="0.45 0.25, 0.55 0.25, 0.5 0.55"
+                to="0 0, 1 0, 0.5 10"
+              />
+            </polygon>
           </clipPath>
         </defs>
       </svg>

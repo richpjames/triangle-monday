@@ -136,8 +136,8 @@ li {
   -webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 
-  /* -webkit-clip-path: url("#polygon-clip-triangle-isoceles"); */
-  /* clip-path: url("#polygon-clip-triangle-isoceles"); */
+  -webkit-clip-path: url("#polygon-clip-triangle-isoceles");
+  clip-path: url("#polygon-clip-triangle-isoceles");
 }
 .triangle-wrap {
   background-color: #fff;
