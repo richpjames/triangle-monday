@@ -1,6 +1,6 @@
-@font-face {
-  font-family: Minion;
-  src: url(./fonts//MinionPro-Regular.otf);
+:root {
+  --font-size: 1.25rem;
+  --page-width: 50rem;
 }
 
 @font-face {
@@ -10,6 +10,14 @@
 
 * {
   font-family: "Trebuchet", Arial, sans-serif;
+}
+
+a,
+h3,
+p,
+ul,
+span {
+  font-size: var(--font-size);
 }
 
 body {
@@ -22,7 +30,6 @@ body {
 a {
   text-decoration: none;
   color: #000;
-  font-size: 2rem;
   line-height: normal;
 }
 
@@ -34,51 +41,30 @@ iframe {
   display: block; /* iframes are inline by default */
   background: #000;
   border: none; /* Reset default border */
-  height: 92.5vh; /* Viewport-relative units */
+  height: 93vh; /* Viewport-relative units */
 }
 
 p {
-  max-width: 50rem;
-  font-size: 1.25rem;
+  width: var(--page-width);
   margin-bottom: 1.5rem;
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 36rem;
-  list-style: none;
-  align-self: center;
-  font-size: 1.25rem;
-  padding-left: 0;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  hyphens: auto;
+  text-align: left;
 }
 
 li {
   /* width: 16rem; */
 }
 
+iframe {
+  display: block; /* iframes are inline by default */
+  background: #000;
+  border: none; /* Reset default border */
+  height: 92.5vh; /* Viewport-relative units */
+}
+
 .previous-clients {
-  margin-bottom: 0;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
   align-self: flex-start;
-}
-
-.executive-producer {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.top-banner {
-  width: 100%;
-  background-color: #000;
-  color: white;
-  display: flex;
-  justify-content: center;
-  height: 4.5rem;
 }
 
 .logo {
@@ -92,29 +78,6 @@ li {
 
 .phone-number {
   margin-bottom: 5rem;
-}
-
-.bottom-of-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.client-list {
-  display: flex;
-  flex-direction: column;
-  width: 60rem;
-}
-
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 .image-wrapper {
@@ -139,7 +102,65 @@ li {
   -webkit-clip-path: url("#polygon-clip-triangle-isoceles");
   clip-path: url("#polygon-clip-triangle-isoceles");
 }
+
 .triangle-wrap {
   background-color: #fff;
   width: 100vw;
+}
+
+.contact {
+  margin-bottom: 0.75rem;
+}
+
+.top-banner {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+}
+
+.bottom-of-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  margin-bottom: 3rem;
+  margin-left: 7.5em;
+}
+
+.clients-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 36rem;
+  list-style: none;
+  align-self: center;
+  padding-left: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  hyphens: auto;
+}
+
+.highlight-list {
+  max-width: var(--page-width);
+  margin-bottom: 6em;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
