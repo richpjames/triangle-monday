@@ -39,9 +39,14 @@ img {
 
 iframe {
   display: block; /* iframes are inline by default */
-  background: #000;
+  background-color: #000;
   border: none; /* Reset default border */
   height: 93vh; /* Viewport-relative units */
+}
+
+.iframe-wrapper {
+  background-color: #000;
+  width: 100%;
 }
 
 p {

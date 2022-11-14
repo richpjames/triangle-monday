@@ -66,34 +66,37 @@
       <img alt="Triangle Monday logo" src="./assets/bw_logo.png" class="logo" />
     </div>
 
-    <iframe
-      src="https://player.vimeo.com/video/767377341?h=5f2dbdc1f8&autoplay=1&title=0&byline=0&portrait=0&muted=1"
-      id="video"
-      width="100%"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen
-      class="polygon-clip-triangle-isoceles"
-    >
-    </iframe>
-    <svg class="clip-svg">
-      <defs>
-        <clipPath
-          id="polygon-clip-triangle-isoceles"
-          clipPathUnits="objectBoundingBox"
-        >
-          <polygon points="0.45 0.25, 0.55 0.25, 0.5 0.55, 0.5 0.55">
-            <animate
-              attributeName="points"
-              begin="1.5s"
-              dur="3s"
-              fill="freeze"
-              from="0.45 0.25, 0.55 0.25, 0.5 0.55, 0.5 0.55"
-              to="0 0, 1 0, 1 1, 0 1"
-            />
-          </polygon>
-        </clipPath>
-      </defs>
-    </svg>
+    <div class="iframe-wrapper">
+      <iframe
+        src="https://player.vimeo.com/video/767377341?h=5f2dbdc1f8&autoplay=1&title=0&byline=0&portrait=0&muted=1"
+        id="video"
+        width="100%"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        class="polygon-clip-triangle-isoceles"
+      >
+      </iframe>
+
+      <svg class="clip-svg">
+        <defs>
+          <clipPath
+            id="polygon-clip-triangle-isoceles"
+            clipPathUnits="objectBoundingBox"
+          >
+            <polygon points="0.45 0.25, 0.55 0.25, 0.5 0.55, 0.5 0.55">
+              <animate
+                attributeName="points"
+                begin="1.5s"
+                dur="3s"
+                fill="freeze"
+                from="0.45 0.25, 0.55 0.25, 0.5 0.55, 0.5 0.55"
+                to="0 0, 1 0, 1 1, 0 1"
+              />
+            </polygon>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
 
     <div class="bottom-of-page">
       <div class="image-wrapper">
