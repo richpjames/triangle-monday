@@ -45,8 +45,9 @@ iframe {
 }
 
 .iframe-wrapper {
-  background-color: #fff;
+  background-color: #000;
   width: 100%;
+  height: 100vh;
 }
 
 p {
@@ -64,6 +65,7 @@ iframe {
   background: #000;
   border: none; /* Reset default border */
   height: 92.5vh; /* Viewport-relative units */
+  position: relative;
 }
 
 .previous-clients {
@@ -100,14 +102,46 @@ iframe {
 
 /* Triangle */
 
-.polygon-clip-triangle-isoceles {
-  -webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-
-  -webkit-clip-path: url("#polygon-clip-triangle-isoceles");
-  clip-path: url("#polygon-clip-triangle-isoceles");
+.outside {
+  position: relative;
+  width: 100vw;
+  height: 93%;
+  background: white;
+  clip-path: polygon(45% 35%, 55% 35%, 50% 52.5%);
+  animation: 3s ease-in 0.75s forwards grow;
 }
 
+.inside {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background: white;
+  clip-path: polygon(45% 35%, 55% 35%, 50% 52.5%);
+  animation: 3s ease-in 0.75s forwards grow;
+}
+
+@keyframes grow {
+  0% {
+    clip-path: polygon(45% 35%, 55% 35%, 50% 52.5%, 50% 52.5%);
+  }
+  65% {
+    clip-path: polygon(20% 20%, 80% 20%, 50% 95%, 50% 95%);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: black;
+  }
+}
+
+.polygon-clip-triangle-isoceles-2 {
+  border: 20px solid white;
+}
+
+.polygon-clip-triangle-isoceles:before {
+  border: 10px solid white;
+}
 .triangle-wrap {
   background-color: #fff;
   width: 100vw;
