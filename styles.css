@@ -48,7 +48,7 @@ iframe {
   display: block; /* iframes are inline by default */
   background: #000;
   border: none; /* Reset default border */
-  height: 92.5vh; /* Viewport-relative units */
+  height: calc(100% - var(--top-banner-height) + 2vh);
   position: relative;
 }
 
