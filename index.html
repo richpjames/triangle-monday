@@ -20,48 +20,7 @@
 
   <body>
     <h1 class="sr-only">Triangle Monday</h1>
-    <script>
-      const scrollDistance = 30;
-      const timeout = 5000;
 
-      const bounce = () => {
-        const timerId1 = setTimeout(() => {
-          window.scrollBy({
-            top: scrollDistance,
-            behavior: "smooth",
-          });
-        }, timeout - 150);
-
-        setTimeout(() => {
-          window.scrollBy({
-            top: -scrollDistance,
-            behavior: "smooth",
-          });
-        }, timeout);
-
-        return timerId1;
-      };
-
-      let timerId1;
-      window.onload = function () {
-        if (!window.scrollY) {
-          timerId1 = bounce();
-          // setTimeout(() => {
-          //   bounce();
-          // }, 2.5 * 1000);
-
-          // if (!run) {
-          //   for (let i = timerId1; i < 10; i++) {
-          //     clearTimeout(i);
-          //   }
-          //   run = true;
-          // }
-        }
-      };
-      window.addEventListener("scroll", () => {
-        clearTimeout(timerId1);
-      });
-    </script>
     <div class="top-half">
       <div class="top-banner">
         <img

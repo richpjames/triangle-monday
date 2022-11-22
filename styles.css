@@ -80,6 +80,7 @@ iframe {
 .image-wrapper {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  max-width: 100vw;
 }
 
 .penultimate-line {
@@ -194,7 +195,29 @@ iframe {
 }
 
 @media only screen and (max-width: 768px) {
+  .image-wrapper {
+    margin-top: 10rem;
+  }
+
   .iframe-wrapper {
     height: 100%;
+    width: 100vw;
+  }
+
+  iframe {
+    height: 75vh;
+  }
+
+  .client-list-wrapper {
+    width: 95vw;
+    margin-left: calc(100% - 95vw);
+  }
+
+  .clients-list {
+    height: 100%;
+  }
+
+  :root {
+    --page-width: 95vw;
   }
 }
