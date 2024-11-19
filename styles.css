@@ -21,6 +21,10 @@ span {
   font-size: var(--font-size);
 }
 
+h2 {
+  margin-bottom: 3.25rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -180,9 +184,9 @@ iframe {
   hyphens: auto;
 }
 
-.highlight-list {
-  max-width: var(--page-width);
-  margin-bottom: 6em;
+.clean-creatives-seal {
+  max-width: 200px;
+  margin-bottom: 3rem;
 }
 
 .sr-only:not(:focus):not(:active) {
