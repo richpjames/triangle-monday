@@ -161,7 +161,7 @@ iframe {
 .client-list-wrapper {
   display: flex;
   flex-direction: column;
-  width: 60rem;
+  width: 80rem;
   margin-bottom: 3rem;
   margin-left: 7.5em;
 }
